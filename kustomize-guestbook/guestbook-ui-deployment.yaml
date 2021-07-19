@@ -18,3 +18,7 @@ spec:
         name: guestbook-ui
         ports:
         - containerPort: 8888
+        securityContext:
+              capabilities:
+                   add:
+                      - NET_ADMIN
